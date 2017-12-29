@@ -162,10 +162,15 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
-.title {
+.ubertitle {
     margin-top: 70px;
     text-align: center;
 }
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -312,7 +317,7 @@ nav ul {
     width: 100%;
     overflow: hidden; /* Enable scrolling if the sidenav has too much content */
     box-shadow: 0 4px 8px gray; /* Laver en boxshadow på højre side af navbar */
-    z-index: 10000000;
+    z-index: 10;
 }
 ol {
     list-style: decimal inside;
@@ -347,7 +352,6 @@ li a{
 }
 
 
-
 li:first-child {
     padding: 9px 12px 5px 10px;
 }
@@ -362,6 +366,9 @@ li a:hover {
     background-color: #f1f1f1;
     color: black;
     height: 100%;
+}
+nav .icon {
+    display: none;
 }
 
 /* Sidenavigation
@@ -406,7 +413,7 @@ li a:hover {
 #html{
     
 }
-
+img {max-width: 100%;}
 
 
 
@@ -507,10 +514,52 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
-
+/*Mobile friendly*/
+@media (max-width: 800px) {
+    #smenu {
+        display: none;
+    }
+    nav ul {
+        overflow: visible;
+    }
+    .topnav li:not(:first-child) {display: none;}
+    .topnav li {border: none;}
+    nav a.icon {
+        right: 0;
+        top: 0;
+        display: inline-block;
+        position: fixed;
+        z-index: 11;
+        font-size: 50px;
+        line-height: 50px;
+        color: #333;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+      right: 0;
+      top: 0;
+  }
+    
+    .icon img{
+        width: 40px;
+        padding: 5px;
+    }
+    .topnav.responsive li a{
+    display: block;
+  }
+    .topnav.responsive li{
+        float:none;
+        display: block;
+        text-align: left;
+        background-color: #474849;
+  }
+    
+}
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    
+}
+
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
@@ -519,7 +568,12 @@ there.
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 800px) {
+    .leftfix {
+        width:200px;
+    }
+
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}

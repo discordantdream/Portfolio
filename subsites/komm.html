@@ -26,7 +26,17 @@
         <!-- Favicon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="../img/favicon.png">
-
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+    }   
+            else {
+        x.className = "topnav";
+    }
+} 
+        </script>
     </head>
     <body>
         <header>
@@ -34,32 +44,138 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
             <nav>
                 <a href="#" id="menu-icon"></a>
-                <ul>
+                <ul class="topnav" id="myTopnav">
                     <li><img src="../img/favicon.png"></li>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="iu.html">Interaktionsudvikling</a></li>
                     <li><a href="dogv.html">Design og Visualisering</a></li>
                     <li><a class="active" href="komm.html">Kommunikation</a></li>
                     <li><a href="virk.html">Virksomheden</a></li>
+                    <a href="javascript:myFunction()" class="icon"><img src="../img/hamburger.png"></a>
                 </ul>
             </nav>
         </header>
-        <div id="smenu">
-            <p>Navigation</p>
-            <a href="#Nej">bum</a>
-            <a href="#">bum</a>
-            <a href="#">bum</a>
-            <a href="#">bum</a>
-        </div>
+            <div id="smenu">
+                <p>Navigation</p>
+                <a href="#his">Web-historie</a>
+                <a href="#html">HTML</a>
+                <a href="#css">CSS</a>
+                <a href="#git">Gittories</a>
+                <a href="#grid">Grids</a>
+                <a href="#respons">Responsivitet</a>
+                <a href="#frame">Frameworks</a>
+            </div>
         <table width="100%">
             <tr>
-                <td width="200px"></td>
+                <td class="leftfix"></td>
                 <td>
-                    <article class="container">
+                    <article id="his" class="container">
                         <section id="Nej">
                             <div class="row">
                                 <div class="twelve columns">
+                                    <h1 class="title">Web-historie</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
                                     <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="html" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">HTML</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="css" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">CSS</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="git" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Gittories</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="grid" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Grids</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="respons" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Responsivitet</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="frame" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Frameworks</h1>
                                 </div>
                             </div>
                             <div class="row">

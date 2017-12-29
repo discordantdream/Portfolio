@@ -26,7 +26,17 @@
         <!-- Favicon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="../img/favicon.png">
-
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+    }   
+            else {
+        x.className = "topnav";
+    }
+} 
+        </script>
     </head>
     <body>
         <header>
@@ -34,32 +44,157 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
             <nav>
                 <a href="#" id="menu-icon"></a>
-                <ul>
+                <ul class="topnav" id="myTopnav">
                     <li><img src="../img/favicon.png"></li>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="iu.html">Interaktionsudvikling</a></li>
                     <li><a class="active" href="dogv.html">Design og Visualisering</a></li>
                     <li><a href="komm.html">Kommunikation</a></li>
                     <li><a href="virk.html">Virksomheden</a></li>
+                    <a href="javascript:myFunction()" class="icon"><img src="../img/hamburger.png"></a>
                 </ul>
             </nav>
         </header>
         <div id="smenu">
             <p>Navigation</p>
-            <a href="#">bum</a>
-            <a href="#">bum</a>
-            <a href="#">bum</a>
-            <a href="#">bum</a>
+            <a href="#farve">Farveteori</a>
+            <a href="#gas">Gastaltlove</a>
+            <a href="#foto">Fotografering</a>
+            <a href="#typo">Typografi</a>
+            <a href="#ps">Photoshop</a>
+            <a href="#ill">Illustrator</a>
+            <a href="#ind">InDesign</a>
+            <a href="#video">Videoproduktion</a>
+            
         </div>
         <table width="100%">
             <tr>
-                <td width="200px"></td>
+                <td class="leftfix"></td>
                 <td>
-                    <article class="container">
+                    <article id="farve" class="container">
                         <section id="Nej">
                             <div class="row">
                                 <div class="twelve columns">
+                                    <h1 class="title">Farveteori</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
                                     <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="gas" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Gastaltlove</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="foto" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Fotografering</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="typo" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Typografi</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="ps" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Photoshop</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="ill" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Illustrator</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="ind" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Indesign</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                                <div class="six columns">
+                                    <h1 class="title">Nej</h1>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <article id="video" class="container">
+                        <section id="Nej">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h1 class="title">Videoproduktion</h1>
                                 </div>
                             </div>
                             <div class="row">
